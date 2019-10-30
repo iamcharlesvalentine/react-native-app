@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import {
     ImageBackground,
@@ -61,7 +60,8 @@ const styles = StyleSheet.create({
     },
     backImage: {
         height: 180,
-        width: 250,
+        width: Dimensions.get('window').width,
+	resizeMode: "contain",
         justifyContent: 'center',
         alignItems: 'center'
     },
